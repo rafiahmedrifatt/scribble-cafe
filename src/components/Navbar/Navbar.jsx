@@ -2,17 +2,17 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div class="navbar bg-base-100 shadow-sm">
-      <div class="flex-1">
-        <a class="btn btn-ghost text-xl">daisyUI</a>
+    <div className="navbar bg-base-100 shadow-sm">
+      <div className="flex-1">
+        <a className="btn btn-ghost text-xl">daisyUI</a>
       </div>
-      <div class="flex-none">
-        <div class="dropdown dropdown-end">
-          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-            <div class="indicator">
+      <div className="flex-none">
+        <div className="dropdown dropdown-end">
+          <div tabindex="0" role="button" className="btn btn-ghost btn-circle">
+            {/* <div className="indicator">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -25,29 +25,29 @@ const Navbar = () => {
                   d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                 />{" "}
               </svg>
-              <span class="badge badge-sm indicator-item">8</span>
-            </div>
+              <span className="badge badge-sm indicator-item">8</span>
+            </div> */}
           </div>
           <div
             tabindex="0"
-            class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
+            className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
           >
-            <div class="card-body">
-              <span class="text-lg font-bold">8 Items</span>
-              <span class="text-info">Subtotal: $999</span>
-              <div class="card-actions">
-                <button class="btn btn-primary btn-block">View cart</button>
+            <div className="card-body">
+              <span className="text-lg font-bold">8 Items</span>
+              <span className="text-info">Subtotal: $999</span>
+              <div className="card-actions">
+                <button className="btn btn-primary btn-block">View cart</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="dropdown dropdown-end">
+        <div className="dropdown dropdown-end">
           <div
             tabindex="0"
             role="button"
-            class="btn btn-ghost btn-circle avatar"
+            className="btn btn-ghost btn-circle avatar"
           >
-            <div class="w-10 rounded-full">
+            <div className="w-10 rounded-full">
               <img
                 alt="Tailwind CSS Navbar component"
                 src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
@@ -56,12 +56,12 @@ const Navbar = () => {
           </div>
           <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a class="justify-between">
+              <a className="justify-between">
                 Profile
-                <span class="badge">New</span>
+                <span className="badge">New</span>
               </a>
             </li>
             <li>
