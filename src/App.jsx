@@ -1,18 +1,25 @@
+import { useState } from "react";
 import "./App.css";
 import Blogs from "./components/Blogs/Blogs";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
+  const [Bookmarked, setBookmarked] = useState([]);
+  const handleBookmark = (blog) => {
+    const newBookmark = [...Bookmarked, blog];
+    setBookmarked(newBookmark);
+  };
   return (
     <>
       <Navbar />
       <div className="flex">
         <div className="left-side-div w-[70%] text-center">
-          <Blogs />
+          <Blogs handleBookmark={handleBookmark} />
         </div>
         <div className="right-side-div w-[30%]">
-          <h1>reading time: 0</h1>
-          <h1>Bookmark count: 0</h1>
+          {Bookmarked.map((marked) => (
+            <li>{marked.title}</li>
+          ))}
         </div>
       </div>
     </>

@@ -1,6 +1,7 @@
 import React from "react";
+import { FaBookmark } from "react-icons/fa6";
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog, handleBookmark }) => {
   return (
     <div className="card card-side bg-base-100 shadow-sm">
       <figure>
@@ -14,6 +15,7 @@ const Blog = ({ blog }) => {
             <img src={blog.author_img} alt="" />
           </div>
           <p className="text-2xl font-medium">{blog.author}</p>
+          <FaBookmark size={30} onClick={() => handleBookmark(blog)} />
         </div>
         <div className="card-actions justify-center">
           <button className="btn btn-primary">Mark As Read</button>
